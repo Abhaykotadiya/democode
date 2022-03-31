@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import { StrictMode } from 'react';
+import Smd from "./container/Smd"
 
 function App() {
 
@@ -49,10 +51,11 @@ function App() {
 
    let filterdata = Data.filter((d,i) => (d.price > 200 && d.expiry > 2021));
 
-   let total =filterdata.reduce((acc,d)=> acc+d.price,0);
+  let total =filterdata.reduce((acc,d)=> acc+d.price,0);
 
   return (
-
+    <>
+    <Smd />
     <table border="1">
         <tr>
           <th>Id</th>
@@ -82,6 +85,8 @@ function App() {
           })
         }
     </table>
+    </>    
+    
   );
 }
 
