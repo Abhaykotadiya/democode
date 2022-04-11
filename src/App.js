@@ -7,6 +7,7 @@ import Country from './container/Country';
 import StateFun from './container/StateFun';
 import City from './container/City';
 import Counter from './container/Counter';
+import Clock from './container/Clock';
 function App() {
 
 
@@ -18,7 +19,8 @@ function App() {
     {/* <Country/> */}
     {/* <StateFun /> */}
     {/* <City /> */}
-    <Counter />
+    {/* <Counter /> */}
+    <Clock />
     </>    
     
   );
